@@ -20,3 +20,10 @@ one. In some cases, this leads to better predictive performance.
 - The parameters we need to tune for gradient boosting are similar for a random
 forest: the depth, the maximum number of observations in the leaf, and the
 number of trees. In addition to that, we have eta — the lear
+
+## Notes
+
+To train a random forest, we can do this :
+- Train N independent decision tree models
+- For each model, select a random subset of features and use only them for training
+- When predicitng, combine the output of N models into one
